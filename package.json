@@ -1,0 +1,25 @@
+{
+  "name": "my_books",
+  "version": "1.0.0",
+  "description": "Estudo de VueJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roddyka/books_vueJS.git"
+  },
+  "author": "Rodrigo Antunes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roddyka/books_vueJS/issues"
+  },
+  "homepage": "https://github.com/roddyka/books_vueJS#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "vue": "^2.1.10",
+    "vue-resource": "^1.1.2"
+  }
+}
