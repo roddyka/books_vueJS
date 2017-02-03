@@ -22,6 +22,24 @@
       </li>
     </ul>
   </div>
+  <div class="row">
+    <h1>My List Elements</h1>
+    <input class="form-control" type="text" v-model="newElement" v-on:keyup.enter="addElement">
+    <ul>
+      <li v-for="element in elements">
+        {{element.title}}
+        <a href="#" class="btn btn-warning" v-on:click="removeElement($event,$index)">X</a>
+      </li>
+    </ul>
+  </div>
+  <div class="row">
+    <h1>v-on</h1>
+    <button class="btn btn-success" v-on:click="myClick">Click</button>
+    <button class="btn btn-success" @click="myClick">@Click</button>
+    <input type="text" @keyup="myKeyUp" placeholder="myKeyUp">
+    <input type="text" @keyup.enter="myKeyUp" placeholder="myKeyUp.enter">
+    <input type="text" @keyup.13="myKeyUp" placeholder="myKeyUp.13">
+  </div>
 </div>
 <script src="node_modules/vue/dist/vue.js"></script>
 <script src="node_modules/vue-resource/dist/vue-resource.js"></script>
